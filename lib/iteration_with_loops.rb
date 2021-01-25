@@ -9,7 +9,12 @@ def find_even_values(src)
     inner_array = src[outer_array_idx]
     ele_idx = 0
     outer_array_idx += 1
-    while inner_array < inner_array.length do
-      
-
+    while ele_idx < inner_array.length do
+      ele = inner_array[ele_idx]
+      if ele % 2 == 0
+        p ele
+      end
+      ele_idx += 1
+    end
+  end
 end
